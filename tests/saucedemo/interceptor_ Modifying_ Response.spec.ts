@@ -36,7 +36,6 @@ test('ejemplo de modificación de respuesta', async ({ page }) =>
 
 // 3. Navegamos a la pagina que hace la peticion a la API
     await page.goto('https://demoqa.com/books');
-    await page.pause();
     await page.screenshot({ path: 'Books.png', fullPage: true });
 
 // 4. Validamos que la respuesta modificada se muestre en la pagina
