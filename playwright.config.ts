@@ -52,8 +52,8 @@ export default defineConfig({
     // una captura de pantalla y un video, para tener evidencia de lo que pasó en cada ejemplo 
     // y poder analizarlo posteriormente.
     trace: 'on',
-    screenshot: 'on',
-    video: 'on',
+    screenshot: 'only-on-failure',
+    video: 'retain-on-failure',
   },
 
   // Configurar proyectos para ejecutar en diferentes navegadores, dispositivos o configuraciones especificas.
