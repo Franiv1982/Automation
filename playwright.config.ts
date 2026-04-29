@@ -32,7 +32,7 @@ export default defineConfig({
   reporter: 'html',
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
-    headless: false,
+    headless: true,
 
     // Tiempo máximo para page.goto() en milisegundos (ej: 45 segundos)
     navigationTimeout: 70000,
