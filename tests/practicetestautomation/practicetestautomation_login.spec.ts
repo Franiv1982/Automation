@@ -1,7 +1,9 @@
 import {test, expect} from '@playwright/test';
+import { PracticetestLoginPage } from './pageobjects/practicetest_login';
 
 test('login with valid credentials', async ({page}) => {
-    
+    const loginPage = new PracticetestLoginPage(page);
+
     // Aumentamos el timeout a 60 segundos para permitir resolver posibles captchas o verificaciones adicionales de Amazon
     test.setTimeout(60000); 
     // Navegacion a la pàgina de login
